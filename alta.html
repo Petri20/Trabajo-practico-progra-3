@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Automóviles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Alta de Automóviles</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="consulta.html">Consultar</a>
+        <a href="modificar.html">Modificar</a>
+        <a href="eliminar.html">Eliminar</a>
+    </nav>
+
+    <main>
+
+        <form id="formAlta">
+            <section>
+            <div>
+                <label for="id">ID (opcional)</label>
+                <input
+                    type="number"
+                    id="id"
+                    min="1"
+                >
+            </div>
+            
+            <div>
+                <label for="marca">Marca</label>
+                <input
+                    type="text"
+                    id="marca"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="precio">Precio</label>
+                <input
+                    type="number"
+                    id="precio"
+                    min="1"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="color">Color</label>
+                <input
+                    type="color"
+                    id="color"
+                    required
+                >
+            </div>
+
+            <button type="submit">
+                Agregar Automóvil
+            </button>
+
+        </form>
+
+        <div id="mensaje"></div>
+        </section>
+
+    </main>
+
+    <script src="alta.js"></script>
+
+</body>
+</html>
